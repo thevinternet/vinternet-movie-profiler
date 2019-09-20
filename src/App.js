@@ -5,7 +5,7 @@ import Form from './components/Form';
 import ResultsList from './components/ResultsList';
 import Footer from './components/Footer';
 
-const apiKey = process.env.API_KEY;
+const apiKey = process.env.REACT_APP_API_KEY;
 
 class App extends React.Component {
 
