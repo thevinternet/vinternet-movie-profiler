@@ -1,0 +1,167 @@
+header,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 30px;
+}
+
+header h1 {
+  margin: 36px 0 24px 0;
+  font-size: 36px;
+}
+
+header p {
+  margin: 0 0 24px 0;
+  font-size: 18px;
+}
+
+h2 {
+  margin: 12px 0 24px 0;
+  font-size: 28px;
+}
+
+a {
+  color: #d7bfd3;
+  text-decoration: underline;
+}
+
+a:hover,
+a:visited {
+  color: white;
+}
+
+/**********************************************************************/
+
+.container {
+  width: 75%;
+}
+
+/**********************************************************************/
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 6px 12px 0 12px;
+}
+
+.card ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card:last-child {
+  margin-bottom: 18px;
+}
+
+/**********************************************************************/
+
+.panel {
+  padding: 6px;
+  margin-bottom: 24px;
+  background-color: #222222;
+  border-radius: 6px;
+  border: solid 2px #d7bfd3;
+  box-shadow: 0 12px 24px -6px rgba(0, 0, 0, 0.95);
+}
+
+/**********************************************************************/
+
+.control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 12px 0 0 0;
+}
+
+form {
+  margin-bottom: 12px;
+}
+
+input[type="submit"] {
+  min-width: 220px;
+  color: white;
+  background-color: #854678;
+  padding: 6px 12px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font-size: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #a86397;
+  text-decoration: none;
+}
+input[type="submit"]:focus {
+  box-shadow: 0 0 0 3px #f4b400;
+  outline: none;
+  text-decoration: none;
+}
+
+/**********************************************************************/
+
+.result-list {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 0 12px 0;
+  border-top: 1px dashed #cccccc;
+}
+
+.result-poster {
+  padding: 4px;
+  border: solid 1px white;
+}
+
+.result-poster img {
+  display: block;
+  margin: 0 auto;
+}
+
+.result-detail {
+  padding: 0 12px;
+}
+
+.result-detail h3 {
+  margin: 12px 0 18px 0;
+  color: #a86397;
+  font-size: 22px;
+  font-weight: normal;
+}
+
+.result-detail span {
+  color: #cca4c4;
+  font-weight: bold;
+}
+
+/**********************************************************************/
+
+@media only screen and (min-width: 900px) {
+  .control {
+    flex-direction: row;
+    justify-content: center;
+    margin: 18px 0 6px 0;
+  }
+
+  input[type="submit"] {
+    margin-right: 12px;
+  }
+
+  .result-list {
+    flex-direction: row;
+  }
+
+  .result-detail h3 {
+    margin: 0 0 18px 0;
+  }
+}
